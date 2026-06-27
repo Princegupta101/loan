@@ -2,11 +2,10 @@
   "name": "lms-backend",
   "version": "1.0.0",
   "description": "LMS Backend API Server",
-  "main": "dist/server.js",
+  "main": "src/server.ts",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "ts-node src/server.ts",
     "seed": "ts-node-dev src/seed.ts"
   },
   "dependencies": {
